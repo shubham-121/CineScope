@@ -1,0 +1,283 @@
+/* This is the backup of the code */
+
+* {
+  margin: 10px;
+  padding: 10px;
+}
+p,
+li {
+  font-size: larger;
+  font-family: cursive;
+  font-weight: 1000;
+}
+body {
+  background-color: #ff6f61;
+  border: 2px solid black;
+  border-radius: 20px;
+  height: auto;
+  overflow: auto;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.title {
+  font-size: large;
+  font-family: cursive;
+  border: 2px solid black;
+  display: inline;
+  margin-left: 570px;
+  border-radius: 20px;
+}
+.navbar {
+  border: 2px solid black;
+  border-radius: 20px;
+  width: 884px;
+  margin-left: 210px;
+  margin-top: 27px;
+}
+
+.input {
+  border-radius: 20px;
+  width: 600px;
+  height: 30px;
+  font-size: larger;
+  font-family: cursive;
+}
+
+.btn {
+  border-radius: 20px;
+  width: 100px;
+  height: 44px;
+  font-family: cursive;
+  font-size: medium;
+}
+
+/* .DisplaySearchMovies {
+  border: 2px solid black;
+
+  height: 500px;
+  width: 500px;
+  overflow: auto;
+  border-radius: 20px;
+}
+.singleMovie {
+  border: 2px solid black;
+  height: auto;
+  width: fit-content;
+  border-radius: 20px;
+} */
+
+.DisplaySearchMovies {
+  padding: 20px; /* Padding inside the container */
+
+  border-radius: 20px; /* Rounded corners for the container */
+  border: 2px solid black; /* Border around the container */
+  overflow: scroll;
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.DisplaySearchMovies {
+  padding: 20px; /* Padding inside the container */
+  border-radius: 20px; /* Rounded corners for the container */
+  border: 2px solid black; /* Border around the container */
+  overflow-y: scroll; /* Scroll vertically */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  width: 500px;
+  height: 500px; /* Set a fixed height to allow scrolling */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.singleMovie {
+  background-color: #737cb1; /* Background color for each movie item */
+  color: white; /* Text color */
+  border: 2px solid #000; /* Border around each movie item */
+  border-radius: 10px; /* Rounded corners for each movie item */
+  padding: 10px; /* Padding inside each movie item */
+  width: 156px; /* Fixed width for each movie item */
+  height: 240px;
+  text-align: center; /* Center text inside each movie item */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  transition: transform 0.3s ease; /* Smooth scale effect on hover */
+  font-family: cursive;
+  text-decoration: underline;
+  overflow: hidden;
+}
+
+.year {
+  margin-top: -31px;
+}
+.singleMovie:hover {
+  transform: scale(1.05); /* Slightly enlarge item on hover */
+}
+
+.poster {
+  border: 2px solid black;
+  height: 145px;
+  width: 127px;
+  margin-top: 0px;
+  margin-left: 6px;
+  margin-bottom: -55px;
+  padding-bottom: 3px;
+}
+
+.showMovieDetails {
+  border: 2px solid black;
+  height: 500px;
+  width: 500px;
+  border-radius: 20px;
+  overflow: auto;
+  margin-left: 119px;
+  margin-top: -10px;
+}
+
+.clickedMovie {
+  height: 252px;
+  width: 456px;
+  border-radius: 62px;
+  margin-top: -6px;
+}
+
+.clickedMovDetails {
+  border: 2px solid black;
+  border-radius: 43px;
+  font-family: cursive;
+  font-weight: 1000;
+  margin-top: -11px;
+}
+
+#movName,
+#movActors,
+#movGenre,
+#movCountry,
+#movPlot,
+#movLanguages,
+#movRating {
+  font-family: cursive;
+  margin: 1px;
+  padding: 10px;
+  border: 2px solid purple;
+  border-radius: 20px;
+  font-weight: 1000;
+}
+
+.star {
+  font-size: 24px;
+  color: rgb(81, 79, 79); /* Color for empty stars */
+}
+
+.filled {
+  color: rgb(255, 217, 3); /* Color for filled stars */
+}
+
+#request {
+  font-family: cursive;
+  font-weight: 1000;
+  font-size: 20px;
+  /* margin-left: 130px; */
+  justify-content: center;
+}
+
+#wait {
+  font-family: cursive;
+  font-weight: 1000;
+  font-size: 20px;
+  /* margin-left: 130px; */
+  justify-content: center;
+}
+
+#watchlist,
+#favourites {
+  width: 138px;
+  height: 58px;
+  padding: 1px;
+  border-radius: 48px;
+  font-weight: 1000;
+  font-family: cursive;
+  font-size: medium;
+  margin-left: 57px;
+  background-color: rgb(147, 143, 147);
+}
+
+#favourites:hover {
+  transform: scale(1.2);
+}
+#watchlist:hover {
+  transform: scale(1.2);
+}
+
+#input-watchlist,
+#input-favourites {
+  width: 101px;
+  height: 49px;
+  padding: 1px;
+  border-radius: 48px;
+  font-weight: 1000;
+  font-family: cursive;
+  font-size: medium;
+  margin-left: 9px;
+  background-color: rgb(147, 143, 147);
+}
+
+#input-watchlist:hover {
+  transform: scale(1.2);
+}
+#input-favourites:hover {
+  transform: scale(1.2);
+}
+/* Modal css */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 27px;
+  max-width: 500px;
+  width: 90%;
+  position: relative;
+  height: 189px;
+}
+
+.modal-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.modal-content li {
+  padding: 5px 0;
+}
+.modal-content button {
+  position: absolute;
+  top: -9px;
+  right: -3px;
+  width: 32px;
+  height: 31px;
+  padding: 0px;
+  border-radius: 20px;
+}
+
+.watchTitle,
+.favTitle {
+  margin: 0px;
+  padding: 7px;
+  font-family: cursive;
+  text-decoration: underline;
+}
